@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 0;
+    background: linear-gradient(90deg,#aeaeae 30%, white 30%);
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding: 0 1rem 0 1rem;
+    height: 4.5rem;
+}
+
+
+#nav-menu {
+    display: flex;
+    justify-content: space-between;
+    /* width: 4rem; */
+    padding: 0;
+    margin-right: 1rem;
+
+}
+
+#nav-menu li {
+    padding: 20px;
+    text-decoration: none;
+}
+
+#nav-menu a {
+    color: #5E5DF0;
+}
+
+#nav-menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    align-items: center;
+    height: 40rem;
+}
+
+#profile-card {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+#profile-card img {
+    width: 10rem;
+    border-radius: 300px;
+}
+
+#profile-card hr {
+    width: 1rem;
+}
+
+#oneP {
+    text-align: center;
+    background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -19px 13px 29px -12px rgba(0, 0, 0, 0.36);
+    align-items: center;
+    height: 25rem;
+    width: 35rem;
+    justify-content: space-between;
+}
+
+#oneP img {
+    margin-top: 2rem;
+}
+
+#oneP h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    width: 10rem;
+    text-align: center;
+}
+
+#oneP h2 .strong{
+    font-size: 1.8rem;
+}
+
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#oneP h3 {
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    opacity: 6.1;
+}
+
+#twoP {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#twoP h1 {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+#buttons a{
+    background: #6868f4;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+#buttons a:hover {
+    background: white;
+    color: black;
+}
+
+#twoP p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    /* padding-top: 2rem; */
+}
+
+footer,
+footer ol {
+    display: flex;
+    text-align: center;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+    margin: 0;
+    background-color: white;
+}
+
+footer ol li {
+    padding: 1rem;
+}
+
+footer ol li h5,
+footer ol li p {
+    margin: 0;
+}
+
+footer ol li p {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+footer p {
+    font-size: 12px;
+}
+#follow-socials{
+    width: 4rem;
+}
+#mail {
+    font-size: 12px;
+    font-weight: 100;
+    color: black;
+}
+
+#icons {
+    color: rgb(76, 76, 76);
+}
+
+
+#card-socials {
+    background-color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+#card-socials a {
+    margin: 0 1.1rem;
+}
+
+.here-i {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        background: linear-gradient(180deg, #aeaeae 120%, white 20%);
+        background-repeat: no-repeat;
+        height: 56rem;
+        width: 100%;
+    }
+
+    #nd {
+        margin: 0;
+    }
+
+    #heading strong {
+        font-size: 1rem;
+    }
+
+    #heading span {
+        font-size: 0.8rem;
+    }
+
+    #buttons {
+        display: none;
+    }
+
+    #profile-card {
+        flex-direction: column;
+    }
+
+    #oneP {
+        width: 15rem;
+        position: relative;
+        top: 4rem;
+        left: -1.7rem;
+    }
+
+    #twoP {
+        width: 15rem;
+        position: relative;
+        top: 5rem;
+        padding-left: 0;
+        left: -1.7rem;
+    }
+
+    footer {
+        position: relative;
+        top: 8rem;
+        padding-left: 30px;
+    }
+
+    #footer {
+        padding-left: 0;
+    }
+
+    #copyright {
+        position: absolute;
+        text-align: center;
+        top: 5rem;
+        left: 7.6rem;
+        /* text-align: center; */
+        padding-bottom: 1rem;
+    }
+
+    #nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        z-index: 1;
+        background-color: #aeaeae;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav-menu.is-clicked {
+        left: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .hamburger {
+        left: 20rem;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #oneP h3 {
+        font-size: 0.8rem;
+    }
+
+    #form {
+        top: 6rem;
+        margin-left: 2.5rem
+    }
+}
+
+
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+    margin-right: 0;
+    position: relative;
+    left: -10px;
+    right: 0;
+    background: transparent;
+    width: 100%;
+}
+
+
+#form form {
+    margin: 2rem;
+    margin-left: -1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+#form h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+form input,
+textarea {
+    padding: 10px;
+    /* border-radius: 8px; */
+    border: none;
+    border-bottom: 1px solid;
+    margin: 10px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+#submit-button {
+    border: 1px solid darkgray;
+    background-color: lightgray;
+}
