@@ -14,34 +14,37 @@
   </head>
 
   <body>
-    <header>
-      <nav id="navbar">
+    <header >
+      <nav id="main-header">
         <div>
           <h1 id="heading">
             <strong>Syed Mohammed Ashaar </strong>
           </h1>
         </div>
-        <ol id="nav-menu">
+        <nav class="menu">
+        <ul>
           <li>
-            <a href="/index.html">About Me</a>
+            <a class="menu-link" href="https://github.com/syedash01?tab=repositories">Projects</a>
           </li>
           <li>
-            <a href="/assets/resources/ashaar.pdf" target="_blank">Resume</a>
+            <a class="menu-link" href="/assets/resources/ashaar.pdf" target="_blank">Resume</a>
           </li>
           <li>
-            <a href="https://github.com/syedash01?tab=repositories">Projects</a>
+            <a class="menu-link" href="/index.html">About Me</a>
           </li>
           <li>
-            <a id="contact" href="#form">Contact</a>
+            <a class="menu-link" id="contact" href="#form">Contact</a>
           </li>
-        </ol>
-        <button class="hamburger hamburger--slider" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+        </ul>
       </nav>
+
+    <button class="hamburger hamburger--slider" type="button">
+      <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+      </span>
+    </button>
     </header>
+
     <main>
       <section id="profile-card">
         <div id="oneP">
@@ -86,6 +89,7 @@
             </a>
             <a href="https://github.com/syedash01">
               <svg
+                id="icons"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -101,7 +105,7 @@
             </a>
           </div>
         </div>
-        <div id="twoP">
+        <div id="twoP" class="twoP">
           <h1>Hello</h1>
           <!-- <p class="here-i">Here's who I am & what I do</p> -->
           <div id="buttons">
