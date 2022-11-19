@@ -626,6 +626,7 @@
    */
 .hamburger--slider .hamburger-inner {
   top: 2px;
+  left: 7px;
 }
 
 .hamburger--slider .hamburger-inner::before {
