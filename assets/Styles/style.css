@@ -367,6 +367,28 @@ main {
         font-size: 2.2rem;
         color: #000000a8;
     }
+
+    .form__button {
+        display: block;
+        margin: 2.5rem 0 0 0;
+        padding: 1rem 3rem;
+        background: #e1e1e1;
+        border-radius: 5px;
+        box-shadow: #000000bf 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #000000d6;
+        cursor: pointer;
+        font: inherit;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 1px solid rgb(0 0 0 / 71%);
+    }    
 }
 
 /* form @media end  */
