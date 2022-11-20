@@ -617,7 +617,7 @@ footer p {
 
     footer {
         position: relative;
-   
+        padding-left: 0;
     }
 
     #icons {
