@@ -265,6 +265,7 @@ main {
 .form__input textarea {
     position: relative;
     width: 100%;
+    background-color: white;
     font: inherit;
     padding: 1rem 0;
     margin-top: 2rem;
@@ -322,6 +323,8 @@ main {
 .form__button:hover{
     background: white;
     color: black;
+    border: none;
+    transition: ease 0.9s;
 }
 
 
@@ -366,6 +369,10 @@ main {
         left: 42%;
         font-size: 2.2rem;
         color: #000000a8;
+    }
+
+    .form__input .bar::before{
+        background-color:#868686;
     }
 
     .form__button {
