@@ -206,7 +206,7 @@ main {
 
 
 /* form start */
-  section{
+ #contact{
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -219,7 +219,7 @@ main {
     padding: 10rem 0 2rem 0;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 1px  0.5rem rgba(0, 0, 0, 0.3) ;
+    box-shadow: 5px 10px 0.8rem rgb(0 0 0 / 70%);
     isolation: isolate;
    
  }
@@ -346,18 +346,25 @@ main {
 }
 
 @media screen and (max-width : 720px){
-    section{
-        height: 55rem;
+    #contact{
+        height: 52rem;
+        padding-bottom: 0;
     }
 
     .form{
-        width: 90%;
+        width: 100%;
+        padding: 11rem 0 0rem 0;
+        box-shadow: 5px 10px 0.8rem rgb(0 0 0 / 70%);
+    }
+    .form>form {
+        padding: 2rem;
     }
 
     .form__title{
-        top: 0;
+        top: 10px;
         left: 42%;
-
+        font-size: 2.2rem;
+        color: #000000a8;
     }
 }
 
@@ -468,6 +475,7 @@ footer p {
     }
     #twoP p {
         padding-left: 1rem;
+        width: 20rem;
     }
     #buttons a{
         font-size: 13px;
@@ -512,6 +520,7 @@ footer p {
         background-repeat: no-repeat;
         height: 56rem;
         width: 100%;
+        overflow-x: hidden;
     }
 
     .menu ul li {
@@ -533,7 +542,9 @@ footer p {
      #buttons {
         display: none;
     }
-
+    main{
+        justify-content: flex-start;
+    }
     #profile-card {
         flex-direction: column;
     }
@@ -541,7 +552,7 @@ footer p {
      #oneP {
         width: 26rem;
         position: relative;
-        top: 4rem;
+        top: 1rem;
     }
 
     .twoP  {
@@ -596,7 +607,7 @@ footer p {
     }
      
     #oneP {
-        width: 18rem;
+        width: 26.5rem;
     }
 
     .twoP  {
@@ -666,22 +677,35 @@ footer p {
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 413px){
     body {
-        background: linear-gradient(180deg, #aeaeae 93%, white 20%);
+        background: linear-gradient(180deg, #aeaeae 100%, white 20%);
         background-repeat: no-repeat;
+        overflow-x: hidden;
     }
     main {
-        height:40rem;
+        height:46rem;
+    }
+   
+    #oneP {
+         width: 23.1rem;
+         top: 3rem;
+         height: 32rem;
+    }
+    #oneP h2 {
+        font-size: 2rem;
+        width: 20rem;
     }
     #twoP {
-        padding-left: 0;
+    padding-left: 20px;
+
     }
 
     .form {
-        width: 90%;
+        width: 94%;
+        top: 3rem;
     }
-    section {
+    #conatct{
         height: 64rem;
         padding-bottom: 0;
     } 
