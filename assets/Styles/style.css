@@ -347,17 +347,18 @@ main {
 
 @media screen and (max-width : 720px){
     #contact{
-        height: 52rem;
+        height: 48rem;
         padding-bottom: 0;
+        justify-content: flex-start;
     }
 
     .form{
-        width: 100%;
+        width: 90%;
         padding: 11rem 0 0rem 0;
         box-shadow: 5px 10px 0.8rem rgb(0 0 0 / 70%);
     }
     .form>form {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .form__title{
@@ -688,13 +689,12 @@ footer p {
     }
    
     #oneP {
-         width: 23.1rem;
-         top: 3rem;
-         height: 32rem;
+         width: 20.3rem;
+         height: 28rem;
     }
     #oneP h2 {
-        font-size: 2rem;
-        width: 20rem;
+        font-size: 1.3rem;
+        width: 14rem;
     }
     #twoP {
     padding-left: 20px;
@@ -702,12 +702,13 @@ footer p {
     }
 
     .form {
-        width: 94%;
-        top: 3rem;
+        width: 87%;
+        top: 2.5rem;
     }
-    #conatct{
-        height: 64rem;
+    #contact{
+        height: 47rem;
         padding-bottom: 0;
+        justify-content: flex-start;
     } 
     .form__title {
         top: 12px;
