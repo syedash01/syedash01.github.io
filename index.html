@@ -5,44 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashaar</title>
     <link rel="stylesheet" href="assets/Styles/style.css" />
-    <link rel="stylesheet" href="assets/Styles/hamburgers.css" />
     <script src="assets/Scripts/script.js" defer></script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-      defer
-    ></script>
   </head>
 
   <body>
-    <header >
+    <header>
       <nav id="main-header">
         <div>
           <h1 id="heading">
             <strong>Syed Mohammed Ashaar </strong>
           </h1>
         </div>
-        <nav class="menu">
-        <ul>
+        <ul class="nav-menu">
           <li>
-            <a class="menu-link" href="https://github.com/syedash01?tab=repositories">Projects</a>
+            <a
+              class="menu-link"
+              href="https://github.com/syedash01?tab=repositories"
+              >Projects</a
+            >
           </li>
           <li>
-            <a class="menu-link" href="/assets/resources/ashaar.pdf" target="_blank">Resume</a>
+            <a
+              class="menu-link"
+              href="/assets/resources/ashaar.pdf"
+              target="_blank"
+              >Resume</a
+            >
           </li>
           <li>
-            <a class="menu-link"  href="#contact">Contact</a>
-          </li>
-          <li>
-            <a class="menu-link" href="#main">About Me</a>
+            <a class="menu-link" href="#contact">Contact</a>
           </li>
         </ul>
+        <div class="humburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-
-    <button class="hamburger hamburger--slider" type="button">
-      <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-      </span>
-    </button>
     </header>
 
     <main id="main">
@@ -124,25 +123,31 @@
         </div>
       </section>
     </main>
-  
+
     <section id="contact">
-        <div class="form">
-          <h2 class="form__title">Let's Connect!</h2>
-          <form action="">
-            <div class="form__input">
-              <i class="ri-mail-line"></i>
-              <input type="email" placeholder="Email">
-              <span class="bar"></span>
-            </div>
-            <div class="form__input">
-              <i class="ri-user-line"></i>
-              <!-- <input type="text" placeholder="Your Message"> -->
-              <textarea name="message" id="" cols="20" rows="5" placeholder="your message"></textarea>
-              <span class="bar"></span>
-            </div>
-            <button type="submit" class="form__button">Submit</button>
-          </form>
-        </div>
+      <div class="form">
+        <h2 class="form__title">Let's Connect!</h2>
+        <form action="">
+          <div class="form__input">
+            <i class="ri-mail-line"></i>
+            <input type="email" placeholder="Email" />
+            <span class="bar"></span>
+          </div>
+          <div class="form__input">
+            <i class="ri-user-line"></i>
+            <!-- <input type="text" placeholder="Your Message"> -->
+            <textarea
+              name="message"
+              id=""
+              cols="20"
+              rows="5"
+              placeholder="your message"
+            ></textarea>
+            <span class="bar"></span>
+          </div>
+          <button type="submit" class="form__button">Submit</button>
+        </form>
+      </div>
     </section>
     <!-- form end -->
     <footer>

@@ -1,11 +1,14 @@
-let hamburgerElement = document.querySelector(".hamburger");
-hamburgerElement.addEventListener("click", menuItems);
+const hambuger = document.querySelector(".humburger-menu");
+const navMenu = document.querySelector(".nav-menu");
 
-let navBar = document.querySelector(".menu");
+hambuger.addEventListener("click", () => {
+  hambuger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-function menuItems() {
-  hamburgerElement.classList.toggle("is-active");
-  // document.body.style.display = 'none';
-  navBar.classList.toggle("is-clicked");
-  hamburgerElement.style.scroll = "no-scroll";
-}
+document.querySelectorAll(".menu-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hambuger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
