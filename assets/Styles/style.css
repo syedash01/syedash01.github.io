@@ -386,8 +386,8 @@ main {
 @media screen and (max-width : 720px){
     #contact{
         height: 48rem;
-        padding-bottom: 0;
-        justify-content: flex-start;
+        padding: 0.8rem;
+        justify-content: space-evenly;
     }
 
     .form{
