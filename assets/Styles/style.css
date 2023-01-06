@@ -802,7 +802,7 @@ footer p {
     }
 
     .flex-container {
-        height: 140%;
+        height: 150%;
     }
 
     .flex-container .flex-item {
@@ -811,7 +811,7 @@ footer p {
 
     footer {
         position: relative;
-        padding-left: 20px;
+        padding-left: 12px;
     }
 
     #icons {
