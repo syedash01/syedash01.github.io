@@ -8,12 +8,12 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
 html {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 
@@ -24,7 +24,6 @@ body {
     background: linear-gradient(90deg,#aeaeae 30%, white 30%);
     background-repeat: no-repeat;
     padding-bottom: 0;
-    scroll-behavior: smooth;
 }
 #main-header{
     display: flex;
@@ -280,7 +279,7 @@ main {
 
 
 .card{
-   width: 32%;
+   width: 35%;
    position: relative;
    margin-bottom: 20px;
    border-radius: 10px;
@@ -455,7 +454,7 @@ small{
     justify-content: center;
     padding: 1rem;
     align-items: center;
-    height: 44rem;
+    height: 100vh;
 }
  .form{
     position: relative;
@@ -594,7 +593,7 @@ small{
 
 @media screen and (max-width : 720px){
     #contact{
-        height: 48rem;
+        height: 100vh;
         padding: 0.8rem;
         justify-content: space-evenly;
     }
@@ -662,7 +661,7 @@ footer {
 }
 
 footer ol li {
-    padding: 0.7rem;
+    padding: 0.6rem;
 }
 
 footer ol li h5,
@@ -901,7 +900,7 @@ footer p {
     }
 
     .card{
-        width: 75%;
+        width: 65%;
     }
 
     footer {
