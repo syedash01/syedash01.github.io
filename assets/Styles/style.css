@@ -744,13 +744,13 @@ footer p {
     #twoP h1 {
         font-size: 3rem;
         padding-left: 1rem;
-        width: 22rem;
-    background: #aeaeae;
+        width: 17rem;
+
     }
     #twoP p {
         padding-left: 1rem;
-        width: 22rem;
-        background: #aeaeae;
+        width: 17rem;
+        
     }
     #buttons a{
         font-size: 13px;
@@ -892,7 +892,7 @@ footer p {
     }
 
     .twoP  {
-        width: 16rem;
+        width: 100%;
     }
 
     .card-name h2{
@@ -978,12 +978,12 @@ footer p {
 
 @media screen and (max-width: 413px){
     body {
-        background: linear-gradient(180deg, #aeaeae 100%, white 20%);
         background-repeat: no-repeat;
         overflow-x: hidden;
     }
     main {
         height:46rem;
+        background: linear-gradient(180deg, #aeaeae 100%, white 20%);
     }
    
     #oneP {
