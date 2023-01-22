@@ -255,7 +255,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 24px;
+    gap: 30px;
 }
 
 
@@ -914,7 +914,7 @@ footer p {
     }
 
     .card{
-        width: 75%;
+        width: 80%;
     }
 
     footer {
