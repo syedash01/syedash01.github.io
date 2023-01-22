@@ -1006,8 +1006,8 @@ footer p {
         top: 2.5rem;
     }
     #contact{
-        height: 47rem;
-        padding-bottom: 0;
+        height: 40rem;
+        margin-bottom: 30px;
         justify-content: flex-start;
     } 
     .form__title {
