@@ -77,7 +77,7 @@ li a{
       background-color: black;
    }
      
-   @media (max-width: 768px){
+   @media (max-width: 990px){
       .humburger-menu{
           display: block;
           z-index: 1;
@@ -332,18 +332,14 @@ figcaption{
 
 
 /* start card */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.card-name{
-    display: block;
+.section2-heading{
     text-align: center;
 }
 
-.card-name h2{
+.section2-heading h2{
+
+    text-align: center;
+    margin-bottom: 40px;
     font-size: 4rem;
     font-family: emoji;
     font-weight: bolder;
@@ -351,99 +347,155 @@ figcaption{
     text-transform: uppercase;
 
 }
-
-small{
-    position: absolute;
-    top: 35px;
-}
-
-.flex-container {
-    height: 78vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    align-items: baseline;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    padding: 3em 1em;
-}
-.flex-container .flex-item {
-  margin: 25px;
-  border-radius: 2px;
-  padding: 11.5em 9em;
-  position: relative;
-  min-height: 260px;
-  border-radius:5px;
-  }
-.flex-container .flex-item:focus {
-        box-shadow: 0 0 3pt 2pt #868686;
-    }
-.flex-container .flex-item a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
+#section-2{
+    min-height: 100vh;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 1.5;
-  -webkit-transition: 600ms ease;
-  transition: 600ms ease;
-  border-radius: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
 }
-.flex-container .flex-item a span {
-  -webkit-transform: translateZ(50px) scale(0.7);
-          transform: translateZ(50px) scale(0.7);
-}
-
-.tilt {
-  box-shadow: 0 20px 30px -13px rgba(0, 0, 0, 0.7);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
-          transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
-}
-.tilt:hover {
-  box-shadow: 0 40px 70px -15px rgba(0, 0, 0, 0.7);
-}
-
-.bg-one {
-    background:linear-gradient(45deg, #967a80, #696ec8);
-}
-
-.bg-two {
-    background: linear-gradient(45deg, #ffffff, #575757);
-}
-
-.bg-three {
-    background: linear-gradient(45deg, #967a80, #696ec8);
-}
-
-.flex-item span > img {
-  width:200px;
-}
-.flex-item .btn{
-  color:#32327e;
-  font-weight:900;
-  font-family:Courier;
-  font-size:2rem;
-  position:absolute;
-  bottom:20px;
-}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card-games{
+    border-radius: 25px;
+    background-color: white;
+    
+  }
+  .social{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .social i{
+    margin: 5px;
+    font-size: 18px;
+  }
+  .social i:hover{
+    cursor: pointer;
+    transition: .5s;
+    transform: scale(1.5);
+  }
+  
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+  }
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+  }
+  .name
+  {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+  .button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover{
+    background-color: #707070;
+  }
+  .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #4070F4;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
 
 
 
@@ -749,7 +801,7 @@ footer p {
     }
     #twoP p {
         padding-left: 1rem;
-        width: 17rem;
+        width: 22rem;
         
     }
     #buttons a{
@@ -784,11 +836,13 @@ footer p {
         z-index: 1;
     }
 
+    
+
 }
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 730px) {
 
     body {
         background: linear-gradient(180deg, #aeaeae 97%, white 20%);
@@ -818,6 +872,8 @@ footer p {
         display: none;
     }
     main{
+        background: linear-gradient(180deg, #aeaeae 97%, white 20%);
+        background-repeat: no-repeat;
         justify-content: flex-start;
     }
     #profile-card {
@@ -900,9 +956,7 @@ footer p {
         margin-bottom: 0;
     }
 
-    .flex-container {
-        height: 160%;
-    }
+
 
     .flex-container .flex-item {
         margin-bottom: 5rem;
@@ -971,7 +1025,12 @@ footer p {
     #oneP h3 {
         font-size: 0.8rem;
     }
-
+    #section-2 {
+        min-height: 75vh;
+    }
+    .section2-heading h2{
+        margin-top: 0;
+    }
 
 }
 
@@ -982,7 +1041,7 @@ footer p {
         overflow-x: hidden;
     }
     main {
-        height:46rem;
+        height:53rem;
         background: linear-gradient(180deg, #aeaeae 100%, white 20%);
     }
    

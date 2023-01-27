@@ -4,13 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashaar</title>
-    <link rel="stylesheet" href="assets/Styles/style.css" />
+    <link rel="stylesheet" href="assets/Styles/main.css" />
+    <link rel="stylesheet" href="/assets/Styles/swiper-bundle.min.css" />
+
     <link
       rel="shortcut icon"
       href="assets/resources/favicon.ico"
       type="image/x-icon"
     />
-    <script src="assets/Scripts/script.js" defer></script>
+    <script src="assets/Scripts/app.js" defer></script>
   </head>
 
   <body>
@@ -23,7 +25,7 @@
         </div>
         <ul class="nav-menu">
           <li>
-            <a class="menu-link" href="#section-2">My Games</a>
+            <a class="menu-link" href="#section-2">Games</a>
           </li>
           <li>
             <a class="menu-link" href="#wrapper">Projects</a>
@@ -114,9 +116,7 @@
           <!-- <p class="here-i">Here's who I am & what I do</p> -->
           <div id="buttons">
             <a href="/assets/resources/ashaar.pdf" target="_blank">Resume</a>
-            <a href="https://github.com/syedash01?tab=repositories"
-              >Github-Repo</a
-            >
+            <a href="https://github.com/syedash01?tab=repositories">Github</a>
           </div>
           <p id="nd">
             I'm syed Mohammed ashaar, Currently pursuing BCA (Bachelors in
@@ -131,39 +131,108 @@
     </main>
 
     <section id="section-2">
-      <!-- partial:index.partial.html -->
-      <div class="card-name">
-        <h2>My Games</h2>
-      </div>
-      <div class="flex-container">
-        <div class="flex-item bg-one tilt">
-          <a href="#nothing">
-            <small>Floppy Bird</small>
-            <span><img src="assets/resources/pngwing.com.png" /></span>
-            <div class="btn">Play Now</div>
-          </a>
+      <div class="slide-container swiper">
+        <div class="section2-heading">
+          <h2>Games</h2>
         </div>
-        <div class="flex-item bg-two tilt">
-          <a href="#nothing">
-            <small>Bouncing Ball</small>
-            <span><img src="assets/resources/break-out-game.png" /></span>
-            <div class="btn">Play Now</div></a
-          >
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card-games swiper-slide">
+              <div class="image-content">
+                <div class="social">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img
+                    src="/assets/resources/pngwing.com.png"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Floppy Bird</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  sapiente.
+                </p>
+                <button class="button">Play now</button>
+              </div>
+            </div>
+
+            <div class="card-games swiper-slide">
+              <div class="image-content">
+                <div class="social">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img
+                    src="/assets/resources/break-out-game.png"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Bouncing Ball</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  sapiente.
+                </p>
+                <button class="button">Play now</button>
+              </div>
+            </div>
+
+            <div class="card-games swiper-slide">
+              <div class="image-content">
+                <div class="social">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img
+                    src="/assets/resources/img.png"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Rock-Paper-Scissor</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  sapiente.
+                </p>
+                <button class="button">Play now</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex-item bg-three tilt">
-          <a href="#nothing">
-            <small>Rock-Paper-Scissors</small>
-            <span><img src="assets/resources/img.png" /></span>
-            <div class="btn">Play Now</div>
-          </a>
-        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
     <!-- start my gallery -->
     <div id="wrapper">
       <div class="container">
-        <h1>My Projects</h1>
+        <h1>Projects</h1>
         <div class="gallery">
           <figure class="card">
             <img src="/assets/project-image/business.png" alt="image" />
@@ -184,7 +253,7 @@
         </div>
       </div>
     </div>
-    <!-- start my gallery -->
+    <!-- end my gallery -->
 
     <section id="contact">
       <div class="form">
@@ -279,5 +348,7 @@
 
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="/assets/Scripts/swiper-bundle.min.js"></script>
+    <script src="/assets/Scripts/script.js"></script>
   </body>
 </html>
