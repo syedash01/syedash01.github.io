@@ -449,7 +449,7 @@ figcaption{
     color: #333;
     text-align: center;
   }
-  .button{
+  .button a{
     border: none;
     font-size: 16px;
     color: white;
