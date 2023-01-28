@@ -406,7 +406,7 @@ figcaption{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #4070f4;
+    background-color: #343d68aa;
     border-radius: 25px 25px 0 25px;
   }
   .overlay::before,
@@ -417,7 +417,7 @@ figcaption{
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #4070f4;
+    background-color: #343d68aa;
   }
   .overlay::after{
     border-radius: 0 25px 0 0;
