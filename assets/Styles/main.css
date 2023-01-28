@@ -307,7 +307,7 @@ img:hover{
 }
 
 
-figcaption{
+figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -316,11 +316,14 @@ figcaption{
     height: 20%;
     font-size: 16px;
     font-weight: 500;
-    color: #fff;
+   
     opacity: 0;
     border-radius: 0 0 10px 10pc;
     background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255, 255, 255, 0) 100% );
     transition: 0.5s;
+}
+figcaption a{
+    color: #fff;
 }
 .card:hover figcaption{
     opacity: 1;
