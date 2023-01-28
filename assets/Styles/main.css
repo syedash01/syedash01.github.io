@@ -255,7 +255,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 30px;
+    gap: 13px;
 }
 
 
@@ -510,7 +510,7 @@ figcaption {
     justify-content: center;
     padding: 1rem;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
 }
  .form{
     position: relative;
@@ -973,6 +973,12 @@ footer p {
     .card{
         width: 80%;
     }
+
+    .gallery{
+        gap: 30px;
+    }
+
+
 
     footer {
         justify-content: space-around;
